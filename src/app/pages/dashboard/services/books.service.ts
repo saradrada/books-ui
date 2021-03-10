@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { IBook } from '../interfaces/IBook';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BooksService {
-  urlBase = 'http://localhost:8080';
+  urlBase = environment.baseUrl;
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
