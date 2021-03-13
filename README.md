@@ -29,7 +29,7 @@ Run the following commands:
 If you have altered it, you then need to rebase it.
 
 ```bash
-  git push -f origin main
+  git rebase upstream/main
 ````
 
 ## Angular Notes
