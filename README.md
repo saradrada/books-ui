@@ -17,6 +17,21 @@ This applications is thinking to deploy in [Heroku](https://www.heroku.com/) and
 
 **Note 2**: Note that these variables are injected at build time if needs to change their values must redeploy the application
 
+## How To Update your fork repository
+
+Run the following commands:
+
+```bash
+  git remote add upstream git@github.com:AgileTestingColombia/books-ui.git
+  git pull upstream main
+```
+
+If you have altered it, you then need to rebase it.
+
+```bash
+  git push -f origin main
+````
+
 ## Angular Notes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
