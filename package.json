@@ -11,7 +11,7 @@
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "config": "node env.js"
+    "config": "node set-env.js"
   },
   "private": true,
   "dependencies": {
